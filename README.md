@@ -1,18 +1,15 @@
-# Diabetes-Detection1
-Predicting Diabetes using ML classifiers 
+# Health Care predictive Analytics  -(DATA ANALYTICS)
 
-# Diabetes Prediction using SMOTE and GAN-based Data Balancing
-
-This project aims to predict whether a patient is diabetic based on a range of health metrics, using the PIMA Diabetes dataset. It addresses the challenge of class imbalance using *SMOTE (Synthetic Minority Over-sampling Technique)* and *GAN (Generative Adversarial Networks)* for synthetic data generation. Multiple machine learning models including *XGBoost, **Random Forest, and **Support Vector Machine (SVM)* are evaluated.
+This project aims to predict whether a patient is diabetic based on a range of health metrics, using the PIMA Diabetes dataset. It addresses the challenge of class imbalance using **SMOTE (Synthetic Minority Over-sampling Technique)** and **GAN (Generative Adversarial Networks)** for synthetic data generation. Multiple machine learning models including **XGBoost**, **Random Forest**, and **Support Vector Machine (SVM)** are evaluated.
 
 ---
 
-##  Dataset Description
+## 📊 Dataset Description
 
-- *Source*: [Kaggle - Diabetes Dataset](https://www.kaggle.com/johndasilva/diabetes)
-- *Samples*: 768 records
-- *Features*: 9 input features, 1 target (Outcome)
-  - Outcome: 0 = Non-diabetic, 1 = Diabetic
+- **Source**: [Kaggle - Diabetes Dataset](https://www.kaggle.com/johndasilva/diabetes)
+- **Samples**: 768 records
+- **Features**: 9 input features, 1 target (`Outcome`)
+  - `Outcome`: 0 = Non-diabetic, 1 = Diabetic
 - No missing values, but zero values in features like BMI and Skin Thickness were replaced with the mean of the column.
 
 ---
@@ -26,30 +23,30 @@ This project aims to predict whether a patient is diabetic based on a range of h
 
 ---
 
-## ⚖ Data Balancing Techniques
+## ⚖️ Data Balancing Techniques
 
-*Problem*: The dataset is imbalanced with more non-diabetic (class 0) than diabetic (class 1) samples.
+**Problem**: The dataset is imbalanced with more non-diabetic (class 0) than diabetic (class 1) samples.
 
-- *SMOTE*: Interpolates between existing minority class samples to generate synthetic data.
-- *GAN*: Uses adversarial networks to generate highly realistic synthetic samples.
+- **SMOTE**: Interpolates between existing minority class samples to generate synthetic data.
+- **GAN**: Uses adversarial networks to generate highly realistic synthetic samples.
 
-*Visuals*:
+**Visuals**:
 - Feature distributions before and after balancing.
 - Performance comparison of models using SMOTE vs GAN.
 
 ---
 
-## Technologies Used
+## 💻 Technologies Used
 
-- *Python 3.8+*
-- *Libraries*:
-  - pandas, numpy
-  - scikit-learn, imbalanced-learn
-  - matplotlib, seaborn
+- **Python 3.8+**
+- **Libraries**:
+  - `pandas`, `numpy`
+  - `scikit-learn`, `imbalanced-learn`
+  - `matplotlib`, `seaborn`
 
 ---
 
-##  Algorithms and Models
+## 🤖 Algorithms and Models
 
 ### 1. SMOTE (Synthetic Minority Over-sampling Technique)
 - Interpolates new synthetic samples using KNN.
@@ -61,14 +58,23 @@ This project aims to predict whether a patient is diabetic based on a range of h
 
 ### 3. XGBoost
 - Boosted decision trees with regularization.
-- *Accuracy*:
+- **Accuracy**:
   - SMOTE: 78.5%
   - GAN: 82.5%
 
 ### 4. Random Forest
 - Ensemble of decision trees using bagging.
-- *Accuracy* with GAN: 80.5%
+- **Accuracy** with GAN: 80.5%
 
 ### 5. Support Vector Machine (SVM)
 - Constructs maximum-margin hyperplane.
-- *Accuracy* with GAN: 81.0%
+- **Accuracy** with GAN: 81.0%
+
+---
+
+## 🚀 Project Execution
+
+```bash
+# Step 1: Clone the Repository
+git clone https://github.com/akihii12/Diabetes-Detection1.git
+cd Diabetes-Detection1
