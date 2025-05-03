@@ -1,4 +1,4 @@
-# Diabetes-Detection1
+# Healthcare Predictive Analytics (Data Analytics)
 Predicting Diabetes using ML classifiers 
 
 # Diabetes Prediction using SMOTE and GAN-based Data Balancing
